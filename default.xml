@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <default sync-j="4" revision="master"/>
+
+  <remote fetch="git://git.yoctoproject.org" name="poky"/>
+  <remote fetch="git://git.openembedded.org" name="oe"/>
+  <remote fetch="git://github.com/meta-qt5" name="qt5"/>
+  <remote fetch="git://git.yoctoproject.org" name="rpi"/>
+  <remote fetch="git://github.com/linux-sunxi" name="sunxi"/>
+
+  <project remote="poky" revision="9fd145d27ec479668fac490a9f1078089f22bf59" name="poky" path="sources/poky" upstream="dizzy"/>
+  <project remote="oe" revision="5b6f39ce325d490fc382d5d59c5b8b9d5fa38b38" name="meta-openembedded" path="sources/meta-openembedded" upstream="dizzy"/>
+  <project remote="qt5" revision="adeca0db212d61a933d7952ad44ea1064cfca747" name="meta-qt5" path="sources/meta-qt5" upstream="dizzy"/>
+  <project remote="rpi" revision="efd760d0a2c027fe20ed190c56f416d0a47d7c41" name="meta-raspberrypi" path="sources/meta-raspberrypi" upstream="dizzy"/>
+  <project remote="sunxi" revision="0ed1eadb956158471748878a8df4bfcf979184f5" name="meta-sunxi" path="sources/meta-sunxi" upstream="dizzy"/>
+
+</manifest>
