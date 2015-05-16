@@ -3,16 +3,18 @@
 
   <default sync-j="4" revision="master"/>
 
-  <remote fetch="git://git.yoctoproject.org" name="poky"/>
+  <remote fetch="git://github.com" name="github"/>
   <remote fetch="git://git.openembedded.org" name="oe"/>
-  <remote fetch="git://github.com/meta-qt5" name="qt5"/>
-  <remote fetch="git://git.yoctoproject.org" name="rpi"/>
-  <remote fetch="git://github.com/linux-sunxi" name="sunxi"/>
+  <remote fetch="git://git.yoctoproject.org" name="yocto"/>
 
-  <project remote="poky" revision="9fd145d27ec479668fac490a9f1078089f22bf59" name="poky" path="sources/poky" upstream="dizzy"/>
-  <project remote="oe" revision="5b6f39ce325d490fc382d5d59c5b8b9d5fa38b38" name="meta-openembedded" path="sources/meta-openembedded" upstream="dizzy"/>
-  <project remote="qt5" revision="adeca0db212d61a933d7952ad44ea1064cfca747" name="meta-qt5" path="sources/meta-qt5" upstream="dizzy"/>
-  <project remote="rpi" revision="efd760d0a2c027fe20ed190c56f416d0a47d7c41" name="meta-raspberrypi" path="sources/meta-raspberrypi" upstream="dizzy"/>
-  <project remote="sunxi" revision="0ed1eadb956158471748878a8df4bfcf979184f5" name="meta-sunxi" path="sources/meta-sunxi" upstream="dizzy"/>
+  <project remote="yocto" revision="3b223f75eec1738fbc913858e8e11c8305e3edcb" name="poky" path="sources/poky" upstream="jethro"/>
+  <project remote="oe" revision="dc5634968b270dde250690609f0015f881db81f2" name="meta-openembedded" path="sources/meta-openembedded" upstream="jethro"/>
+  <project remote="github" revision="d5536e34ec985c82b621448ab4325e5cbba38560" name="meta-qt5/meta-qt5" path="sources/meta-qt5" upstream="jethro"/>
+  <project remote="yocto" revision="f2cff839f52a6e6211337fc45c7c3eabf0fac113" name="meta-raspberrypi" path="sources/meta-raspberrypi" upstream="jethro"/>
 
+  <project remote="github" revision="master" name="liuxincheng/meta-papillon" path="sources/meta-papillon"/>
+  <project remote="github" revision="master" name="liuxincheng/yoctoproject-base" path="sources/base">
+    <copyfile dest="README.md" src="README.md"/>
+    <copyfile dest="setup-environment" src="setup-environment"/>
+  </project>
 </manifest>

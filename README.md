@@ -1,3 +1,3 @@
-repo init -u https://github.com/chenzilin/yoctoproject-manifest.git --repo-url=git://github.com/CyanogenMod/tools_repo.git
+repo init -u https://github.com/liuxincheng/yoctoproject-manifest.git --repo-url=git://github.com/liuxincheng/git-repo.git
 
 repo sync
