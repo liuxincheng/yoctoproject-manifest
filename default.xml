@@ -7,10 +7,10 @@
   <remote fetch="git://git.openembedded.org" name="oe"/>
   <remote fetch="git://git.yoctoproject.org" name="yocto"/>
 
-  <project remote="yocto" revision="57eb677f0efe9a4060c764e8e9dfe2440d4e5eb2" name="poky" path="sources/poky" upstream="fido"/>
-  <project remote="oe" revision="214e1801d0efc38d3b6142bdc0d8e58ca593e34c" name="meta-openembedded" path="sources/meta-openembedded" upstream="fido"/>
-  <project remote="github" revision="90919b9d86988e7da01fa2c0a07246b5b5600a5d" name="meta-qt5/meta-qt5" path="sources/meta-qt5" upstream="fido"/>
-  <project remote="yocto" revision="0776b86c6629b7294ff61e67609f2d4e10e9712c" name="meta-raspberrypi" path="sources/meta-raspberrypi" upstream="fido"/>
+  <project remote="yocto" revision="6dba9abd43f7584178de52b623c603a5d4fcec5c" name="poky" path="sources/poky" upstream="jethro"/>
+  <project remote="oe" revision="c305ac5d2f5285d5eec8952a4ca7f3b4f89aed96" name="meta-openembedded" path="sources/meta-openembedded" upstream="jethro"/>
+  <project remote="github" revision="9bfcf79fcd824efb9f2a9bd72ecbedfee1315c96" name="meta-qt5/meta-qt5" path="sources/meta-qt5" upstream="jethro"/>
+  <project remote="yocto" revision="f2cff839f52a6e6211337fc45c7c3eabf0fac113" name="meta-raspberrypi" path="sources/meta-raspberrypi" upstream="jethro"/>
 
   <project remote="github" revision="master" name="liuxincheng/meta-papillon" path="sources/meta-papillon"/>
   <project remote="github" revision="master" name="liuxincheng/yoctoproject-base" path="sources/base">
